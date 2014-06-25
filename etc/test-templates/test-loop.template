@@ -1,0 +1,33 @@
+
+<h1>Test \#loop statement</h2>
+
+#set($j = 0)
+#loop(1 to 10 as $i)	
+	#set($j = $j + 2)
+#end
+
+#if($j != 20)
+	<p>\$j = $j</p>
+	<p>\#loop is broken!</p>
+#end
+
+#set($j = 0)
+#loop(1 to 10 as $i)
+	#set($j = $j + 2)
+	#set($i = $i + 1)
+#end
+
+#if($j != 6)
+	<p>\$j = $j</p>
+	<p>\#loop is broken when \$i is changed!</p>
+#end
+
+#set($j = 0)
+#loop(1 to 10 as $i step 2)
+	#set($j = $j + 2)
+#end
+
+#if($j != 20)
+	<p>\$j = $j</p>
+	<p>\#loop is broken!</p>
+#end

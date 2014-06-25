@@ -1,0 +1,16 @@
+
+<h1>Test various expressions</h2>
+
+#set($pi = 3.14159)
+#set($r = 2.4458)
+#set($pi_r = $pi * $r)
+#set($pi_r_sqrd = $pi_r * $pi_r)
+
+<p>\$pi_r_sqrd = $pi_r_sqrd</p>
+
+#set($j = 1)
+#set($k = 256)
+#set($l = 512)
+#set($m = ($k * $l) / 8 + $j)
+
+<p>\$m = $m</p>

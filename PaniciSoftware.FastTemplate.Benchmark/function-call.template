@@ -1,0 +1,93 @@
+this template contains a bunch of function calls.
+
+#set( $i = 10 )
+#loop( 0 to 100 as $i )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+#end

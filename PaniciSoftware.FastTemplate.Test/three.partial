@@ -1,0 +1,4 @@
+Inside of three.partial: \$foo = $foo
+
+#parse ('one.partial')
+#parse ('two.partial')

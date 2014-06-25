@@ -1,0 +1,7 @@
+#loop( 0 to 1000 as $i )
+#set( $o1.IntField = 100 )
+#set( $o2.StringField = 'a string with some chars up in it.' )
+#set( $o3.DoubleField = 12312.123123D )
+#set( $o4.DecimalField = 123123M )
+#set( $o5.BoolField =  1 == 1 )
+#end

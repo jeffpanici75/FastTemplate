@@ -1,0 +1,11 @@
+**/bin
+**/obj
+*.user
+*.pdb
+*.suo
+*.pubxml
+ILMerge.exe
+.DS_Store
+
+**/TemplateParser.cs
+**/TemplateParser.tokens

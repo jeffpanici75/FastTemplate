@@ -1,0 +1,14 @@
+
+<h1>Test \#continue statement</h2>
+
+#set($j = 0)
+
+#loop(1 to 100 as $i)	
+	#if($i % 2 == 0) #continue #end
+	#set($j = $j + 2)
+#end
+
+<p>
+\$i = $i
+\$j = $j
+</p>

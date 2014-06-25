@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaniciSoftware.FastTemplate", "PaniciSoftware.FastTemplate\PaniciSoftware.FastTemplate.csproj", "{4FD464A5-94EC-4889-858F-022C09BB23B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaniciSoftware.FastTemplate.Test", "PaniciSoftware.FastTemplate.Test\PaniciSoftware.FastTemplate.Test.csproj", "{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaniciSoftware.FastTemplate.Benchmark", "PaniciSoftware.FastTemplate.Benchmark\PaniciSoftware.FastTemplate.Benchmark.csproj", "{B1A15898-405B-4CC8-9D31-0C3A232BA880}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Grammar", "Grammar", "{84924DCD-930F-4766-AF45-1FADA8609B2A}"
+	ProjectSection(SolutionItems) = preProject
+		etc\grammar\TemplateLexer.tokens = etc\grammar\TemplateLexer.tokens
+		etc\grammar\TemplateParser.g = etc\grammar\TemplateParser.g
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{4FD464A5-94EC-4889-858F-022C09BB23B3}.Release|x86.ActiveCfg = Release|Any CPU
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Debug|x86.ActiveCfg = Debug|x86
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Debug|x86.Build.0 = Debug|x86
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Release|Any CPU.ActiveCfg = Release|x86
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Release|Mixed Platforms.Build.0 = Release|x86
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Release|x86.ActiveCfg = Release|x86
+		{4AC9513A-C500-4A2F-A5D7-F65215BBBB3B}.Release|x86.Build.0 = Release|x86
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Debug|x86.ActiveCfg = Debug|x86
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Debug|x86.Build.0 = Debug|x86
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Release|Any CPU.ActiveCfg = Release|x86
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Release|Mixed Platforms.Build.0 = Release|x86
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Release|x86.ActiveCfg = Release|x86
+		{B1A15898-405B-4CC8-9D31-0C3A232BA880}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+
+#set($total = 0.0)
+
+<center>
+
+<h1>Your shopping cart contains the following items:</h1>
+
+#foreach($item in $shoppingCart)
+	#nodata
+		<h2>The cart is empty.</h2>
+	#beforeall
+	<table width="640px" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>SKU</td>
+			<td>Description</td>
+			<td>Unit Price</td>
+			<td>Quantity</td>
+			<td>Extension</td>
+		</tr>	
+	#afterall
+	</table>
+	#even
+		<tr style="background: \#003333;">
+			<td>$item.Sku</td>
+			<td>$item.Description</td>
+			<td>$formatCurrency($item.Price)</td>
+			<td>$item.Quantity</td>
+			<td>$formatCurrency($($item.Quantity * $item.Price))</td>
+		</tr>
+	#odd
+		<tr style="background: white;">
+			<td>$item.Sku</td>
+			<td>$item.Description</td>
+			<td>$formatCurrency($item.Price)</td>
+			<td>$item.Quantity</td>
+			<td>$formatCurrency($($item.Quantity * $item.Price))</td>
+		</tr>
+	#each
+		#set($total = $total + ($item.Price * $item.Quantity))
+#end
+
+#if($showCartTotal)
+	<h2>The total for your cart is: $formatCurrency($total)</h2>
+#end
+
+</center>

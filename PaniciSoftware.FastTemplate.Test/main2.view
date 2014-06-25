@@ -1,0 +1,7 @@
+We're going to test multiple levels of \#include.
+
+#set ($foo = 10)
+#include ('one.partial')
+
+#set ($foo = 20)
+#include ('three.partial')

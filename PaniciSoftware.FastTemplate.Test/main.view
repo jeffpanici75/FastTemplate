@@ -1,0 +1,7 @@
+We're going to test multiple levels of \#parse and \#include.
+
+#set ($foo = 10)
+#parse ('one.partial')
+
+#set ($foo = 20)
+#parse ('three.partial')

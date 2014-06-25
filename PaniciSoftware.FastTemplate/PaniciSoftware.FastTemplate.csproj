@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4FD464A5-94EC-4889-858F-022C09BB23B3}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PaniciSoftware.FastTemplate</RootNamespace>
+    <AssemblyName>PaniciSoftware.FastTemplate</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime">
+      <HintPath>..\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\BooleanType.cs" />
+    <Compile Include="Common\ByteArrayExtensions.cs" />
+    <Compile Include="Common\CompilerResult.cs" />
+    <Compile Include="Common\DecimalType.cs" />
+    <Compile Include="Common\DelegateType.cs" />
+    <Compile Include="Common\DictType.cs" />
+    <Compile Include="Common\DoubleType.cs" />
+    <Compile Include="Common\EnumType.cs" />
+    <Compile Include="Common\Error.cs" />
+    <Compile Include="Common\ErrorList.cs" />
+    <Compile Include="Common\ErrorListExtensions.cs" />
+    <Compile Include="Common\ErrorMessageHelper.cs" />
+    <Compile Include="Common\ExpressionHelper.cs" />
+    <Compile Include="Common\IAssembly.cs" />
+    <Compile Include="Common\ILGeneratorExtensions.cs" />
+    <Compile Include="Common\IntType.cs" />
+    <Compile Include="Common\InvalidTypeException.cs" />
+    <Compile Include="Common\ITemplateType.cs" />
+    <Compile Include="Common\ITemplateTypeArrayExtensions.cs" />
+    <Compile Include="Common\ITemplateWriter.cs" />
+    <Compile Include="Common\IVirtualTemplate.cs" />
+    <Compile Include="Common\ListType.cs" />
+    <Compile Include="Common\LongType.cs" />
+    <Compile Include="Common\LoopDirective.cs" />
+    <Compile Include="Common\NullType.cs" />
+    <Compile Include="Common\ObjectType.cs" />
+    <Compile Include="Common\PrimitiveType.cs" />
+    <Compile Include="Common\ResourceResolverResult.cs" />
+    <Compile Include="Common\StringExtensions.cs" />
+    <Compile Include="Common\StringType.cs" />
+    <Compile Include="Common\TemplateCache.cs" />
+    <Compile Include="Common\TemplateCacheResult.cs" />
+    <Compile Include="Common\TemplateDictionary.cs" />
+    <Compile Include="Common\TemplateExecutionResult.cs" />
+    <Compile Include="Common\TemplateLexer.cs" />
+    <Compile Include="Common\TemplateParser.cs" />
+    <Compile Include="Common\TrimMode.cs" />
+    <Compile Include="Common\UIntType.cs" />
+    <Compile Include="Common\VoidType.cs" />
+    <Compile Include="Compiler\Assembly.cs" />
+    <Compile Include="Compiler\AssemblyBuilder.cs" />
+    <Compile Include="Compiler\AssemblyContext.cs" />
+    <Compile Include="Compiler\Assert.cs" />
+    <Compile Include="Compiler\Block.cs" />
+    <Compile Include="Compiler\CallSite.cs" />
+    <Compile Include="Compiler\Constant.cs" />
+    <Compile Include="Compiler\Context.cs" />
+    <Compile Include="Compiler\Control.cs" />
+    <Compile Include="Compiler\CtorInfoArgIns.cs" />
+    <Compile Include="Compiler\DebugInfo.cs" />
+    <Compile Include="Compiler\DecimalParseIns.cs" />
+    <Compile Include="Compiler\DeclareLocalIns.cs" />
+    <Compile Include="Compiler\DefineLabel.cs" />
+    <Compile Include="Compiler\Document.cs" />
+    <Compile Include="Compiler\DoubleArgIns.cs" />
+    <Compile Include="Compiler\DynamicString.cs" />
+    <Compile Include="Compiler\Emitter.cs" />
+    <Compile Include="Compiler\Expression.cs" />
+    <Compile Include="Compiler\FastConstIntIns.cs" />
+    <Compile Include="Compiler\FieldInfoArgIns.cs" />
+    <Compile Include="Compiler\FixedArgsCallSite.cs" />
+    <Compile Include="Compiler\Foreach.cs" />
+    <Compile Include="Compiler\If.cs" />
+    <Compile Include="Compiler\Instruction.cs" />
+    <Compile Include="Compiler\Int64ArgIns.cs" />
+    <Compile Include="Compiler\IntArgIns.cs" />
+    <Compile Include="Compiler\JumpScope.cs" />
+    <Compile Include="Compiler\LabelArgIns.cs" />
+    <Compile Include="Compiler\LoadLocalIns.cs" />
+    <Compile Include="Compiler\Loop.cs" />
+    <Compile Include="Compiler\MarkLabel.cs" />
+    <Compile Include="Compiler\MemberFunctionCallSite.cs" />
+    <Compile Include="Compiler\MethodInfoArgIns.cs" />
+    <Compile Include="Compiler\OpCodeIns.cs" />
+    <Compile Include="Compiler\Passthrough.cs" />
+    <Compile Include="Compiler\Pragma.cs" />
+    <Compile Include="Compiler\Section.cs" />
+    <Compile Include="Compiler\Statement.cs" />
+    <Compile Include="Compiler\StoreLocalIns.cs" />
+    <Compile Include="Compiler\StringArgIns.cs" />
+    <Compile Include="Compiler\TypeArgIns.cs" />
+    <Compile Include="Compiler\VirtualTemplate.cs" />
+    <Compile Include="Interpreter\Assert.cs" />
+    <Compile Include="Interpreter\Block.cs" />
+    <Compile Include="Interpreter\Constant.cs" />
+    <Compile Include="Interpreter\Context.cs" />
+    <Compile Include="Interpreter\Control.cs" />
+    <Compile Include="Interpreter\DynamicString.cs" />
+    <Compile Include="Interpreter\Evaluator.cs" />
+    <Compile Include="Interpreter\Expression.cs" />
+    <Compile Include="Interpreter\FnArgs.cs" />
+    <Compile Include="Interpreter\Interpreter.cs" />
+    <Compile Include="Interpreter\Loop.cs" />
+    <Compile Include="Interpreter\Passthrough.cs" />
+    <Compile Include="Interpreter\Pragma.cs" />
+    <Compile Include="Interpreter\Section.cs" />
+    <Compile Include="Interpreter\Statement.cs" />
+    <Compile Include="Template.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="TypeExclusions.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Common\TemplateParser.tokens" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>cscript /nologo "$(SolutionDir)bin\check-timestamp.vbs" "$(SolutionDir)etc\grammar\TemplateParser.g" "$(SolutionDir)PaniciSoftware.FastTemplate\Common\TemplateParser.cs"
+if errorlevel 1 java -jar "$(SolutionDir)bin\antlr-3.4-complete.jar" -verbose -report -o "$(SolutionDir)PaniciSoftware.FastTemplate\Common" "$(SolutionDir)etc\grammar\TemplateParser.g" -lib "$(SolutionDir)etc\grammar"</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>if "$(BuildMergedAssemblies)" == "true" goto merge
+exit 0
+
+:merge
+mkdir "$(TargetDir)merged"
+
+"$(SolutionDir)bin\ILMerge.exe" /targetplatform:v4 /closed /internalize:"$(ProjectDir)/TypeExclusions.txt" /out:"$(TargetDir)merged\$(TargetFileName)" "$(TargetPath)" "$(TargetDir)Antlr3.Runtime.dll"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

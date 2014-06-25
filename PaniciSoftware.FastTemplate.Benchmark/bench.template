@@ -1,0 +1,346 @@
+#set($one   = 1L)
+#set($two   = 2U)
+#set($three = 3D)
+#set($four  = 4M)
+#set($five  = 5)
+
+#pragma(notrim)
+#pragma(trim)
+#pragma(notrim)
+
+#if( $one == 1L )
+This text verifies that 1 equals 1
+#end
+
+#if( $two == 2U )
+This text verifies that 2 equals 2
+#end
+
+#if( $three == 3D )
+This text verifies that 3 equals 3
+#end
+
+#if( $four == 4M )
+This text verifies that 4 equals 4
+#end
+
+#if( $five == 5 )
+This text verifies that 5 equals 5
+#end
+
+#set( $str = 'a string with some chars up ins')
+
+#if( $str == 'a string with some chars up ins' )
+String compare works!
+#end
+
+#set( $var = 100 )
+
+#if( true )
+
+#if( $var < 10 )
+Var is not less than 10, why does this text appear?
+#elseif( $var < 20 )
+Var is not less than 20, why does this text appear?
+#elseif( $var < 30 )
+Var is not less than 30, why does this text appear?
+#elseif( $var < 40 )
+Var is not less than 40, why does this text appear?
+#elseif( $var < 50 )
+Var is not less than 50, why does this text appear?
+#elseif( $var < 60 )
+Var is not less than 60, why does this text appear?
+#elseif( $var < 70 )
+Var is not less than 70, why does this text appear?
+#elseif( $var < 80 )
+Var is not less than 80, why does this text appear?
+#elseif( $var < 90 )
+Var is not less than 90, why does this text appear?
+#elseif( $var <= 100 )
+Var is exactly 100 so it is not less than 100!
+#else
+Var was 100 why are you seeing this?
+#end
+
+#if(false)
+should not appear.
+#end
+
+#end
+
+#loop( 1 to 10000 as $index step 10 - 9 )
+#end
+
+\$index == 10000 + 1?
+
+$index -> $index
+
+#assert( false, 'you will not see this message!' )
+
+#assert( $index == 10001, 'verifies that $index == 10001' )
+
+#set( $list = [1,2,3,4,5,6,7,8] )
+
+#foreach( $item in $list )
+$item
+#if( $item == 7 )#break#end
+#end
+
+#assert( $item == 7, 'verifies that break is working' )
+
+#set( $dict = { one = 1, two = 2, three = 3, str = 'a string in a dictionary' } )
+
+#assert( $dict['one'] == 1, 'dictionary indexer working' )
+#assert( $dict['two'] == 2, 'dictionary indexer working' )
+#assert( $dict['three'] ==3, 'dictionary indexer working' )
+#assert( $dict['str'] == 'a string in a dictionary', 'dictionary indexer working' )
+
+#loop( 0 to 1000 as $i )
+#set( $o1.IntField = 100 )
+#set( $o2.StringField = 'a string with some chars up in it bitches.' )
+#set( $o3.DoubleField = 12312.123123D )
+#set( $o4.DecimalField = 123123M )
+#set( $o5.BoolField =  1 == 1 )
+#end
+
+this template contains a bunch of function calls.
+
+#set( $i = 10 )
+#loop( 0 to 100 as $i )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+$source.AddSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$source.AddSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+#end
+
+this template contains a bunch of function calls.
+#set( $i = 10 )
+
+$foo( 1,2,3,4 )
+
+$addSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+
+$addSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+
+#loop( 0 to 100 as $i )
+$addSome( $i + 1, $i + 2, $i + 3, 'a static string with some extra chars in it past what is need to describe' )
+$addSomeMore( 
+    $i + 1,
+    $i + 2,
+    $i + 3,
+    'a static string with some extra chars in it past what is need to describe',
+    100.01,
+    123123L )
+#end
+
+this template contains a bunch of deep property access.
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o1.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o2.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o3.Field1.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o4.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o5.Field3.Field4.Field1.Field2.Field3.Field4.IntField
+
+$o6.Field2.Field3.Field4.Field1.Field2.Field3.Field4.IntField

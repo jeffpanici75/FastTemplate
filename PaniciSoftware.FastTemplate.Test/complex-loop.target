@@ -1,0 +1,53 @@
+<center>
+
+<h1>Your shopping cart contains the following items:</h1>
+
+    <table width=""640px"" cellspacing=""0"" cellpadding=""0"">
+        <tr>
+            <td>SKU</td>
+            <td>Description</td>
+            <td>Unit Price</td>
+            <td>Quantity</td>
+            <td>Extension</td>
+        </tr>
+
+                                <tr style=""background: #003333;"">
+            <td>PS-APP-01</td>
+            <td>PSapp Server License</td>
+            <td>$59,999.00</td>
+            <td>12</td>
+            <td>$719,988.00</td>
+        </tr>
+                                    <tr style=""background: white;"">
+            <td>PS-DB-01</td>
+            <td>PSapp Server License</td>
+            <td>$59,999.00</td>
+            <td>12</td>
+            <td>$719,988.00</td>
+        </tr>
+                                    <tr style=""background: #003333;"">
+            <td>PS-CACHE-01</td>
+            <td>PSapp Server License</td>
+            <td>$499.00</td>
+            <td>12</td>
+            <td>$5,988.00</td>
+        </tr>
+                                    <tr style=""background: white;"">
+            <td>PS-QUEUE-01</td>
+            <td>PSapp Server License</td>
+            <td>$499.00</td>
+            <td>12</td>
+            <td>$5,988.00</td>
+        </tr>
+                                    <tr style=""background: #003333;"">
+            <td>PS-MESH-01</td>
+            <td>PSapp Server License</td>
+            <td>$499.00</td>
+            <td>12</td>
+            <td>$5,988.00</td>
+        </tr>
+            </table>
+
+    <h2>The total for your cart is: $1,457,940.00</h2>
+
+</center>

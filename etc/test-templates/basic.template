@@ -1,0 +1,44 @@
+This a test!  Of course, we need to ensure that the compiler is
+doing it's job "correctly".
+
+I should be able to include arbitrary special characters, like this:
+\$, [, ], {, }, (, ), \#, \#\#, \#\#\#, [[, ]]
+
+I should even be able to do this: \${, \$}, \@, \@\@, \@\@\@, \$@
+
+\$foo.One = $foo.One
+\$foo.two = $foo.two
+\$bar = $bar
+\$bing = $bing
+\$baz = $baz
+
+All of \$foo = ${foo}
+
+If I quote a variable, it should still expand, correct?
+
+"$foo"
+
+or
+
+"$foo.One"
+
+or
+
+'$baz'
+
+or
+
+"${bing}"
+
+or
+
+'${bing}'
+
+Oh, but \$baz is a *macro*, so let's try that!
+
+@baz
+
+Or: "@baz"
+Or: '@baz'
+Or: '@{baz}'
+

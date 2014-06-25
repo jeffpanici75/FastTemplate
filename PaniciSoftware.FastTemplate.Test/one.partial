@@ -1,0 +1,6 @@
+Inside of one.partial: \$foo = $foo
+
+We're now going another level deep:
+
+#set ($foo = 5)
+#parse ('two.partial')

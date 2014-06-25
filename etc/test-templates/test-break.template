@@ -1,0 +1,17 @@
+
+<h1>Test \#break statement</h2>
+
+#set($j = 0)
+
+#loop(1 to 100 as $i)	
+	#if($i % 2 == 0) #continue #end
+	#set($j = $j + 2)
+	#if($j > 50)
+		#break
+	#end
+#end
+
+<p>
+\$i = $i
+\$j = $j
+</p>
