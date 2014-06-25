@@ -5,5 +5,5 @@ A modern recreation of a WebMacro-like template engine for the .NET platform.  T
 
 Authors
 ========
-Jeff Panici
-Ben Siemon
+- Jeff Panici
+- Ben Siemon
